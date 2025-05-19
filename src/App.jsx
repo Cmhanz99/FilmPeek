@@ -28,7 +28,7 @@ const App = () => {
 
     // Add 1 second delay to show loading animation
     setTimeout(() => {
-      fetch(`http://www.omdbapi.com/?s=${movieName}&apikey=734c05fb`)
+      fetch(`https://www.omdbapi.com/?s=${movieName}&apikey=734c05fb`)
         .then((response) => response.json())
         .then((data) => {
           setMovies(data.Search || []); // Handle case when no movies found
